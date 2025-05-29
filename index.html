@@ -11,68 +11,113 @@
       padding: 0 20px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #222;
-      line-height: 1.6;
-      background-color: #fefefe;
+      background-color: #fff;
     }
-    h1, h2 {
-      margin-top: 1.5em;
+    img.profile {
+      width: 150px;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 20px;
     }
-    a {
-      color: #2F3677;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img {
-      border-radius: 8px;
-      max-width: 150px;
+    h1 {
+      text-align: center;
       margin-bottom: 10px;
     }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    .bio {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 20px;
     }
-    ul {
-      padding-left: 1.2em;
+    .links {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .links a {
+      margin: 0 10px;
+      color: #2F3677;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .publication {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .publication img {
+      width: 150px;
+      border-radius: 8px;
+    }
+    .pub-details {
+      flex: 1;
+    }
+    .pub-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .pub-authors, .pub-conf {
+      font-size: 0.95em;
+      margin-bottom: 3px;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img src="photo.jpeg" alt="Andrei Polubarov">
-    <div>
-      <h1>Andrei Polubarov</h1>
-      <p>RL researcher</p>
-      <p>
-        <a href="stark050600@mail.ru">email</a> · 
-        <a href="https://github.com/artfawl">GitHub</a> · 
-        <!-- <a href="https://arxiv.org/a/yourid.html">arXiv</a> -->
-      </p>
+
+  <img src="photo.jpg" alt="Andrei Polubarov" class="profile">
+
+  <h1>Andrei Polubarov</h1>
+
+  <p class="bio">
+    test text
+  </p>
+
+  <div class="links">
+    <a href="https://twitter.com/earo050">Twitter</a>
+    <a href="https://scholar.google.com/citations?user=pM2zYOwAAAAJ&hl">Google Scholar</a>
+    <!-- <a href="cv.pdf">CV</a> -->
+    <a href="https://github.com/artfawl">GitHub</a>
+  </div>
+
+  <h2>Publications</h2>
+
+  <div class="publication">
+    <img src="figures/vintix.pdf" alt="Publication image">
+    <div class="pub-details">
+      <div class="pub-title">
+        Vintix: Action Model via In-Context Reinforcement Learning
+      </div>
+      <div class="pub-authors">
+        Andrei Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Ilya Zisman, Denis Tarasov, Alexander Nikulin, Vladislav Kurenkov
+      </div>
+      <div class="pub-conf">
+        International Conference on Machine Learning (ICML), Poster, 2025
+      </div>
+      <div>
+        <a href="https://arxiv.org/abs/2501.19400">[arXiv]</a>
+      </div>
     </div>
   </div>
 
-  <h2>About me</h2>
-  <p>
-    Test text
-  </p>
+  <div class="publication">
+    <img src="figures/laom.pdf" alt="Publication image">
+    <div class="pub-details">
+      <div class="pub-title">
+        Latent Action Learning Requires Supervision in the Presence of Distractors
+      </div>
+      <div class="pub-authors">
+        Alexander Nikulin, Ilya Zisman, Denis Tarasov, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov
+      </div>
+      <div class="pub-conf">
+        International Conference on Machine Learning (ICML), Poster, 2025
+      </div>
+      <div>
+        <a href="https://arxiv.org/abs/2502.00379">[arXiv]</a>
+      </div>
+    </div>
+  </div>
 
-  <h2>Publications</h2>
-  <ul>
-    <li>
-        <b>Vintix: Action Model via In-Context Reinforcement Learning</b><br>
-        Andrey Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Ilya Zisman, Denis Tarasov, Alexander Nikulin, Vladislav Kurenkov<br>
-        <a href="https://arxiv.org/abs/2501.19400">arXiv:2501.19400</a>, 2025
-      </li>
-    <li>
-      <b>Latent Action Learning Requires Supervision in the Presence of Distractors</b><br>
-      Alexander Nikulin, Ilya Zisman, Denis Tarasov, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov<br>
-      <a href="https://arxiv.org/abs/2502.00379">arXiv:2502.00379</a>, 2025
-    </li>
-    <!-- Добавь другие публикации ниже -->
-  </ul>
-
-  <p style="margin-top: 4em; font-size: 0.9em; color: #777;">Last updated: May 2025</p>
+  <!-- Добавь больше публикаций аналогично -->
+  
 </body>
 </html>
